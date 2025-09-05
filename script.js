@@ -207,13 +207,13 @@ function initProductPage() {
     // Disable button if already in cart
     const cart = getCart();
     if (cart.find(item => item.id === id)) {
-      button.textContent = "Added to Cart";
+      button.textContent = "Added to cart";
       button.disabled = true;
     }
 
     button.addEventListener('click', () => {
       addToCart({ id, name, price, image: img });
-      button.textContent = "Added to Cart";
+      button.textContent = "Added to cart";
       button.disabled = true;
     });
   });
