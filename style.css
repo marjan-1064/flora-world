@@ -105,7 +105,7 @@ margin-left: clamp(40px, 90px, 200px);
 .card-flower{
     display:grid;
     grid-template-columns: 1fr 1fr;
-     gap:10px; 
+     gap:20px; 
     margin-left:clamp(10px,20px,25px);
     margin-right:clamp(10px,20px,25px);
     
@@ -113,19 +113,21 @@ margin-left: clamp(40px, 90px, 200px);
 }
 
 .card-f{
-     background-color: #e8f5e9; 
+     background-color: #e8f5e9e3; 
     width:fit-content;
     position: relative;
     border-radius: 7px;
    
 }
 .card-f h6{
+    font-size: 0.5rem;
     position: absolute;
     top:2px;
     right:1px;
-    background-color: red;
+    background-color: rgb(219, 19, 19);
     font-size: clamp(18px,19px,20px);
      padding: 3px; 
+     font-size: 0.9rem;
 }
  .card-f img{
     width:fit-content;
@@ -135,6 +137,7 @@ margin-left: clamp(40px, 90px, 200px);
     justify-self: center;
 }
 .card-f h5{
+font-size: 0.89rem;
     justify-self: center;
 }
 .cart-btn{
@@ -144,15 +147,14 @@ margin-left: clamp(40px, 90px, 200px);
     border: none;
     border-radius: 3px;
     color:white;
-     background:linear-gradient(90deg,#d26e04,#0eac62,#e8861e);
+     /* background:linear-gradient(90deg,#d26e04,#0eac62,#e8861e); */
+      background:linear-gradient(90deg,#d26e04,#07693b);
 }
  .cart-btn:hover:not(:disabled){
-   background-color: #199d38;
     transform:scale(1.09); 
 }
 .cart-btn:disabled{
-    background-color: #847f7f;
-    cursor:not allowed;
+    background: #847f7f;
 }
 /* cart page */
 .cart-main{
@@ -298,13 +300,17 @@ height:190px;
         height:500px;
         
     }
+    .card-f{
+        gap:10px;
+    }
     .card-f img{
         height:100px;
         
     }
     .cart-btn{
-         margin-left:20.5px; 
-         margin-right:20px;
+        font-size: 0.9rem;
+         margin-left:17.5px; 
+         margin-right:17px;
        
     }
     .cart-count{
